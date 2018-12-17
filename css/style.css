@@ -2,12 +2,32 @@ html,body
 {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .heading
 {
-    text-align: center;
+    
     font-size: 5vw;
     font-family: roboto;
     
+}
+.inputContainer
+{
+    
+    width: 300px;
+    margin: 0 auto;
+}
+.input
+{
+    height: 40px;;
+    font-size: 1.2em;
+}
+#circle
+{
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: black;
 }
