@@ -38,3 +38,39 @@ html,body
     width: 90vw;
     border: 1px solid skyblue;
 }
+#paint
+{
+    background-color: #ffffff;
+    cursor: crosshair;
+}
+#inputContainer2
+{
+    width: 400px;
+    margin: 0 auto;
+    height: 100px;
+}
+.input2
+{
+    width: 130px;
+    font-size: 1.3em;
+    color: blueviolet;
+    float: left;
+}
+.button
+{
+    background-color: rgba(55, 60, 65, 0.253);
+    padding: 10px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+ .button:active
+{
+    top: 3px;
+    background-color: rgba(122, 25, 30, 0.514);
+    border-bottom: 2px solid rgba(124, 24, 24, 0.726);
+}
+.er_button
+{
+    background-color:black;
+    color: #ffffff;
+}
