@@ -78,17 +78,18 @@ $(document).ready(function () {
             }
             $(this).toggleClass("er_button");
         })
-
+// click on Reset button
         $('#reset').click(function(){
             ctx.clearRect(0,0,canvas.width,canvas.height);
             paint_erase="paint";
             $("#erase").removeClass("er_button");
         })
+//click on Save button
         $('#save').click(function(){
             localStorage.setItem("imgCanvas",canvas.toDataURL());
         })
 
-        // onload saved canvas load
+// onload saved canvas load
         let img=new Image();
         img.onload=function(){
             ctx.drawImage(img,0,0);
