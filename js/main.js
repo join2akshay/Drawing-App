@@ -7,7 +7,7 @@ $(document).ready(function () {
         slide: function(event,ui){
             $('#circle').height(ui.value);
             $('#circle').width(ui.value);
-          
+          ctx.lineWidth=ui.value;
         }
         }
     ); 
@@ -47,7 +47,7 @@ $(document).ready(function () {
                 {
                     //painting
                     //get color input
-                    ctx.strokeStyle="red";
+                   
                 }
                 else
                 {
@@ -96,6 +96,15 @@ $(document).ready(function () {
         }
         img.src=localStorage.getItem("imgCanvas");
 
-
-    
+//choose color value and change color
+$("#paintColor").change(function (e) { 
+    $("#circle").css("background-color",$(this).val());
+    ctx.strokeStyle=$(this).val();
+});  
+//touch event
+document.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+    var touch = e.touches[0];
+    console.log(touch.pageX + " - " + touch.pageY);
+}, false); 
 });
