@@ -3,6 +3,8 @@ html,body
     margin: 0;
     padding: 0;
     text-align: center;
+    background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(144,136,193,0.865983893557423) 35%, rgba(0,212,255,1) 100%);
 }
 
 .heading
@@ -42,6 +44,8 @@ html,body
 {
     background-color: #ffffff;
     cursor: crosshair;
+    width: 1229px;
+    height: 400px;
 }
 #inputContainer2
 {
@@ -53,7 +57,7 @@ html,body
 {
     width: 130px;
     font-size: 1.3em;
-    color: blueviolet;
+    color: #ffffff;
     float: left;
 }
 .button
@@ -74,3 +78,10 @@ html,body
     background-color:black;
     color: #ffffff;
 }
+
+@media screen and (max-width: 450px) {
+    #paint {
+      width: 375px;
+      height: 400px;
+    }
+  }
